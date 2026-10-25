@@ -34,3 +34,9 @@ One entry per meaningful session. The "we audited the tool" moment in the presen
 - **After the fix:** 0 days beyond the limit in both adjusted and "unadjusted" prices. Yahoo's unadjusted close is
   already adjusted for bonus issues, so the bonus-issue trap does not appear in Yahoo data (it does in raw exchange data).
 - **Lesson:** A ±10% rule is not ±0.10 in log returns. And a warning that drops a stock changes every result after it.
+### 2026-10-25 — Elif — Claude Code summary of src/pca.py
+- **Prompt:** "Explain in 5 sentences what src/pca.py does. Do not change any files."
+- **What Claude produced:** A summary of `fit_pca`, the helper functions and `act1` (Claude Code in VS Code, read-only).
+- **How we verified it:** Compared each claim with the code line by line. Almost everything was correct.
+- **Bug caught / fix:** Claude said `fit_pca` "uses only the training data". In fact `fit_pca` fits whatever it is given; the training-only guarantee comes from `act1` (which passes `split(rets)[0]`) and from the test `test_fit_ignores_test_period`. `act1` even passes the full sample on purpose for the leakage check.
+- **Lesson:** An AI summary can state a guarantee that the code does not enforce by itself; check where the guarantee really comes from.
