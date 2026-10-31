@@ -10,9 +10,9 @@ AD 49F: Data and Decisions — Building Your Own Investing Algorithms with AI ·
 | --- | --- | --- | --- |
 | Elif Sude Cengiz (A) | Opening, Act 1: PCA, Q&A moderator | Story + PCA lead; demo script | `src/config.py`, `src/pca.py`, `grup6_demo.py`, `tests/helpers.py` |
 | Ahmet Çevik (B) | Act 2: Clustering, Closing | Clustering + live Claude Code demo; slides | `src/plotting.py`, `src/clustering.py`, `tests/run_all.py` |
-| Esat Çankaya (C) | Data section, Act 3: Honest test | Data pipeline, honest backtest, honesty contract | `src/data.py`, `src/backtest.py`, `docs/decisions.md` |
+| Berke Maraşlı (C) | Data section, Act 3: Honest test | Data pipeline, honest backtest, honesty contract | `src/data.py`, `src/backtest.py`, `docs/decisions.md` |
 
-Team: Elif Sude Cengiz, Esat Çankaya, Ahmet Çevik.
+Team: Elif Sude Cengiz, Berke Maraşlı, Ahmet Çevik.
 
 ## Hypothesis
 
