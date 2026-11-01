@@ -8,11 +8,11 @@ Data download date: ____  ·  Commit: ____  ·  This file is frozen after `git t
 - Days beyond ±10% in unadjusted prices, and the most striking example: ____
 
 ## Act 1 — PCA (Member A)
-- PC1 variance share: ____ · First 3 PCs: ____
-- Marchenko–Pastur λ+: ____ · Components above noise: ____
-- Effective number of bets: ____ / 20
-- Correlations of PCs with XU100 and USD/TRY: ____
-- Do Spearman / Ledoit–Wolf change the result? ____
+- PC1 variance share: 49.3% · First 3 PCs: 62.7%
+- Marchenko–Pastur λ+: 1.52 · Components above noise: 2 (the 70% rule would keep 5)
+- Effective number of bets: 8.0 / 20
+- Correlations of PCs with XU100 / USD/TRY: PC1 0.98 / −0.10 · PC2 0.04 / 0.19 · PC3 0.03 / −0.03
+- Do Spearman / Ledoit–Wolf change the result? No: effective bets 8.9 (Spearman) and 8.4 (Ledoit–Wolf). Leakage check: PC2 loadings change by up to 0.22 if the test period is included.
 
 ## Act 2 — Clustering (Member B)
 - Chosen k and silhouette scores: ____
